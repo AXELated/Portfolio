@@ -1,0 +1,96 @@
+:root{
+    --bg: #081b29;
+    --fonts: #ffffff;
+    --buttons: #212121;
+    --buttonbg: orange;
+
+}
+
+.bg{
+    background-color: #081b29;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--fonts);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: var(--buttonbg);
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg);
+    position: relative;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+
+    
+}
+
+.about p {
+    font: size 50px;
+
+}
+
+.about{
+    margin-left: 8%;
+    margin-top: 15%;
+    color: var(--fonts);
+    gap: 15px;
+
+}
+
+.about .neo{
+    text-decoration: none;
+    border: 212121;
+padding: 10px;
+border-radius: 10%;
+    color: var(--fonts);
+    background: var(--buttons);
+    
+}
+
+.social a{
+    font-size: 30px;
+    color: var(--fonts);
+    margin-right: 20px;
+}
+
+.about a:hover{
+    color: var(--buttonbg);
+
+}
+
+@media screen and (min-width:850px)
+    

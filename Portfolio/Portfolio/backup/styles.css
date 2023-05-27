@@ -1,0 +1,202 @@
+:root{
+    --bg: #081b29;
+    --fonts: #ffffff;
+    --buttons: #212121;
+    --buttonbg: orange;
+
+}
+
+.bg{
+    background-color: #081b29;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg);
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+
+    
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--fonts);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: var(--buttonbg);
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: var(--fonts);
+    margin-bottom: 20px;
+}
+
+span{
+    color: var(--buttonbg);
+    
+}
+
+.detel p{
+    color: var(--fonts);
+    line-height: 22px;
+}
+
+.detel{
+    margin-top: 100px;
+}
+
+.detel a{
+    background: var(--buttons);
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--fonts);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .web{
+    left: 45%;
+}
+
+
+
+.social{
+    margin-left: 8%;
+    margin-top: 50px;
+}
+
+.social a{
+    font-size: 30px;
+    color: var(--fonts);
+    margin-right: 20px;
+}
+
+.social a:hover{
+    color: var(--buttonbg);
+
+}
+
+
+.dtails{
+    color: var(--fonts);
+}
+
+.linkme:hover {
+    color: var(--buttonbg);
+}
+
+
+@media screen and (max-width: 844px)
+{
+    .images img{
+      width: 90%;
+      position: absolute;
+      height: auto;
+      margin-bottom: 390px;    
+      margin-left: 60px; 
+     
+ 
+    }
+
+    .logo{
+        width: 20%;
+    }
+    .hero li {
+        font-size: 10px;
+
+    }
+    .detel{font-size: 10px;}
+    .detel h1 {font-size: 25px;}
+    .linkme{margin:40px;}
+    .social{font-size: 10px;}
+    }
+
+
+    @media screen and (min-width: 900px) (max-width:1190px)
+{
+    .images img{
+      width: auto;
+      position: absolute;
+      height: auto;
+      margin-bottom: 400px;    
+      margin-left: 80px;
+      margin-right: 100px; 
+    }
+
+    .logo{
+        width: 20%;
+    }
+    .hero li {
+        font-size: 10px;
+
+    }
+    .detel{font-size: 10px;}
+    .detel h1 {font-size: 25px;}
+    .linkme{margin:40px;}
+    .social{font-size: 10px;}
+    }
